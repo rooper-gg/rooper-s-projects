@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#yeet').on('click', function () {
         var password = $('#inputPassword4').val();
         var email = $('#inputEmail4').val();
-        alert('Your email is ' + email + ' and your password is ' + password);
+        alert('Sike! Your email is ' + email + ' and your password is ' + password);
     });
 
     $('#heading2').on('click', function () {
@@ -26,12 +26,12 @@ $(document).ready(function() {
         l2.html(content2);
     });
 
-    $('#inputCity').on('keyup', function() {
-        var content = $('#inputCity').val();
+    $('#inputEmail4').on('keyup', function() {
+        var content = $('#inputEmail4').val();
         var uppercase = content.toUpperCase();
-        $('#inputCity').val(uppercase);
+        $('#inputEmail4').val(uppercase);
 
 
-        $('#inputZip').val(Math.random());
+        $('#pl').text('Password ' + Math.random());
     });
 });
